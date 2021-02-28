@@ -1,2 +1,4 @@
-# DSA-LeetCode
-Topic-wise CPP solutions of LeetCode Practice Problems of DSA
+# DSAlgos
+Topic-wise CPP programs of popular DSA questions
+
+Also consists solutions of LeetCode/GFG Practice problems
