@@ -14,5 +14,6 @@ class Solution
             res++;
         }
         return res;
+        // return ffs(n); returns first set bit from right
     }
 };
