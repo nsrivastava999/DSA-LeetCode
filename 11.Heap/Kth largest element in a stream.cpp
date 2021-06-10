@@ -25,4 +25,31 @@ class Solution
             
         }
     }
+
+    //another method
+    vector<int> kthLargest(int k, int arr[], int n) {
+        // code here
+        vector<int>res;
+        priority_queue<int,vector<int>,greater<int>>pq;
+        for(int i=0;i<n;i++){
+            int x;
+            if(i<k)
+                pq.push(arr[i]);
+            else{
+                if(pq.top()<arr[i]){
+                    // x = pq.top();
+                    pq.pop();
+                    pq.push(arr[i]);
+                }
+            }
+            if(pq.size()<k)
+                res.push_back(-1);
+            else
+                res.push_back(pq.top());
+                
+        }
+        // res.push_back(pq.top());
+        // pq.pop();
+        return res;
+    }
 };
